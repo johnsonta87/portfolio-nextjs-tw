@@ -31,7 +31,7 @@ export default function HomePage() {
 
       <div className='w-full mt-4'>
         <p className='mt-2 text-sm'>
-          <ArrowLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
+          <ArrowLink href='/about'>
             Learn more about me
           </ArrowLink>
         </p>
