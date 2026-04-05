@@ -24,6 +24,15 @@ const projects: Project[] = [
     tags: ['React', 'Convex', 'TypeScript', 'Tailwind CSS'],
     image: '/images/projects/team-planning-poker.png',
   },
+  {
+    id: '2',
+    title: 'Parks Finder',
+    description:
+      'Using the google maps API, users can filter for national or provincial parks. They can also drill the filter down by the city and province.',
+    link: 'https://github.com/johnsonta87/parks-listing',
+    tags: ['React Native', 'Convex', 'TypeScript'],
+    image: '/images/projects/parks-finder.png',
+  },
 ];
 
 export default function ProjectsPage() {
