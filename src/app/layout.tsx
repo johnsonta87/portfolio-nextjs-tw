@@ -5,9 +5,10 @@ import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
 
-import { siteConfig } from '@/constant/config';
 import Header from '@/components/Header';
 import { ThemeProvider } from '@/components/ThemeContext';
+
+import { siteConfig } from '@/constant/config';
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -58,7 +59,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning>
-      <body className="min-h-screen bg-white text-black dark:bg-neutral-900 dark:text-white transition-colors duration-300">
+      <body className='min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300'>
         <ThemeProvider>
           {/* Main content */}
           <main>

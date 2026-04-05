@@ -1,11 +1,11 @@
 'use client';
 
-import * as React from 'react';
 import Link from 'next/link';
+import * as React from 'react';
 import '@/lib/env';
 
-import ArrowLink from '@/components/links/ArrowLink';
 import Footer from '@/components/Footer';
+import ArrowLink from '@/components/links/ArrowLink';
 import NextImage from '@/components/NextImage';
 
 export default function HomePage() {
@@ -25,21 +25,17 @@ export default function HomePage() {
 
       <h1 className='mt-4'>Hello! I'm Johnson, a software developer</h1>
       <h2 className='mt-2'>
-        I have over 10 years of development experience in web and mobile applications. Currently working at a
-        Calgary-based airline company
+        I have over 10 years of development experience in web and mobile
+        applications. Currently working at a Calgary-based airline company
       </h2>
 
       <div className='w-full mt-4'>
         <p className='mt-2 text-sm'>
-          <ArrowLink href='/about'>
-            Learn more about me
-          </ArrowLink>
+          <ArrowLink href='/about'>Learn more about me</ArrowLink>
         </p>
 
         <p className='mt-2 text-sm'>
-          <Link href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-            Check out my projects
-          </Link>
+          <Link href='/projects'>Check out my projects</Link>
         </p>
       </div>
 

@@ -38,6 +38,17 @@
   color: #fafafa !important;
 }
 
+.light {
+  --color-dark: #222222;
+  background-color: #ffffff !important;
+  color: #18181b !important;
+}
+
+.light body {
+  background-color: #ffffff !important;
+  color: #18181b !important;
+}
+
 /* Animation keyframes */
 @keyframes flicker {
   0%,

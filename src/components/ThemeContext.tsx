@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
@@ -13,7 +13,9 @@ const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 export default ThemeContext;
 export { ThemeContext };
 
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [theme, setThemeState] = useState<Theme>('system');
 
   useEffect(() => {
@@ -35,15 +37,18 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
   const setHtmlClass = (theme: Theme) => {
     const root = window.document.documentElement;
+
+    // Reset explicit theme classes before applying the active one.
+    root.classList.remove('light', 'dark');
+
     if (theme === 'system') {
-      root.classList.remove('dark');
       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
         root.classList.add('dark');
+      } else {
+        root.classList.add('light');
       }
-    } else if (theme === 'dark') {
-      root.classList.add('dark');
     } else {
-      root.classList.remove('dark');
+      root.classList.add(theme);
     }
   };
 
