@@ -48,7 +48,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             {tags.map((tag) => (
               <span
                 key={tag}
-                className='inline-block px-3 py-1 text-xs font-semibold rounded-full bg-gray-200 dark:bg-black text-black dark:text-white border border-black dark:border-white'
+                className='inline-block px-3 py-1 text-xs font-semibold rounded-full bg-transparent text-black dark:text-white border border-black dark:border-white'
               >
                 {tag}
               </span>

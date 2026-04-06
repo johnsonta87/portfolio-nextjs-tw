@@ -1,6 +1,9 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
 @theme {
   /* Font configuration */
   --font-primary: 'Inter', system-ui, sans-serif;
@@ -27,25 +30,13 @@
 }
 
 /* Dark mode overrides for CSS variables and base styles */
-.dark {
-  --color-dark: #fafafa;
-  background-color: #18181b !important;
-  color: #fafafa !important;
-}
-
 .dark body {
   background-color: #18181b !important;
   color: #fafafa !important;
 }
 
-.light {
-  --color-dark: #222222;
-  background-color: #ffffff !important;
-  color: #18181b !important;
-}
-
 .light body {
-  background-color: #ffffff !important;
+  background-color: #f8f1e7 !important;
   color: #18181b !important;
 }
 

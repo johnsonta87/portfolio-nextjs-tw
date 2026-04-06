@@ -30,7 +30,7 @@ const projects: Project[] = [
     description:
       'Using the google maps API, users can filter for national or provincial parks on mobile devices and the web. They can also drill the filter down by the city and province.',
     link: 'https://github.com/johnsonta87/parks-listing',
-    tags: ['React Native', 'Convex', 'TypeScript', 'Expo'],
+    tags: ['React Native', 'TypeScript', 'Expo'],
     image: '/images/projects/parks-finder.png',
   },
 ];
