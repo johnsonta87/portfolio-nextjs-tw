@@ -17,6 +17,22 @@ interface Project {
 const projects: Project[] = [
   {
     id: '1',
+    title: 'Calgary Schools',
+    description:
+      'An app for users to find local Calgary schools, ask AI about them, filter and get directions from a starting point from a Google map.',
+    link: 'https://yyc-schools.vercel.app/',
+    tags: [
+      'React',
+      'Tanstack Start',
+      'OpenAI API',
+      'Convex',
+      'Google Maps API',
+      'Tailwind CSS',
+    ],
+    image: '/images/projects/yyc-schools-finder.png',
+  },
+  {
+    id: '2',
     title: 'Planning Poker',
     description:
       'A ticket story estimation tool for team members to collaboratively estimate task complexity using a card-based system. Votes are stored in the session and database per room session. Teams can then discuss on their estimates.',
@@ -25,7 +41,7 @@ const projects: Project[] = [
     image: '/images/projects/team-planning-poker.png',
   },
   {
-    id: '2',
+    id: '3',
     title: 'Parks Finder',
     description:
       'Using the google maps API, users can filter for national or provincial parks on mobile devices and the web. They can also drill the filter down by the city and province.',
