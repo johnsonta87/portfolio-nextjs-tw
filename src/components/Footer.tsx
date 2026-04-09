@@ -9,9 +9,14 @@ import { SiX } from 'react-icons/si';
 const Footer: React.FC = () => {
   const pathname = usePathname();
   const isProjectsPage = pathname === '/projects';
+  const positionClasses = isProjectsPage
+    ? 'mt-12 sm:mt-auto'
+    : 'sm:absolute sm:bottom-2 mt-12 sm:mt-0';
 
   return (
-    <footer className='w-full sm:absolute sm:bottom-2 flex flex-col sm:flex-row items-start sm:items-center border-t border-black dark:border-white py-6 gap-3 sm:gap-0 mt-12 sm:mt-0'>
+    <footer
+      className={`w-full ${positionClasses} flex flex-col sm:flex-row items-start sm:items-center border-t border-black dark:border-white py-6 gap-3 sm:gap-0`}
+    >
       <Link
         href='https://github.com/johnsonta87'
         target='_blank'
